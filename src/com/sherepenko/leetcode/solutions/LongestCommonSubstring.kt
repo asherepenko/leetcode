@@ -13,7 +13,7 @@ class LongestCommonSubstring(
             val m = text1.length
             val n = text2.length
 
-            val matrix = Array(m) {
+            val dp = Array(m) {
                 IntArray(n)
             }
 
@@ -22,14 +22,14 @@ class LongestCommonSubstring(
             for (i in 0 until m) {
                 for (j in 0 until n) {
                     if (text1[i] == text2[j]) {
-                        matrix[i][j] = if (i == 0 || j == 0) {
+                        dp[i][j] = if (i == 0 || j == 0) {
                             1
                         } else {
-                            matrix[i - 1][j - 1] + 1
+                            dp[i - 1][j - 1] + 1
                         }
                     }
 
-                    result = max(result, matrix[i][j])
+                    result = max(result, dp[i][j])
                 }
             }
 

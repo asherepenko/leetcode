@@ -13,23 +13,23 @@ class LongestCommonSubsequence(
             val m = text1.length + 1
             val n = text2.length + 1
 
-            val matrix = Array(m) {
+            val dp = Array(m) {
                 IntArray(n)
             }
 
             for (i in 0 until m) {
                 for (j in 0 until n) {
-                    matrix[i][j] = if (i == 0 || j == 0) {
+                    dp[i][j] = if (i == 0 || j == 0) {
                         0
                     } else if (text1[i - 1] == text2[j - 1]) {
-                        matrix[i - 1][j - 1] + 1
+                        dp[i - 1][j - 1] + 1
                     } else {
-                        max(matrix[i - 1][j], matrix[i][j - 1])
+                        max(dp[i - 1][j], dp[i][j - 1])
                     }
                 }
             }
 
-            return matrix[m - 1][n - 1]
+            return dp[m - 1][n - 1]
         }
     }
 

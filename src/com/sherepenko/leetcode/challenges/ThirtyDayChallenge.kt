@@ -152,7 +152,15 @@ object ThirtyDayChallenge : Executable {
                 ),
                 LongestCommonSubsequence(
                     text1 = "abcde",
-                    text2 = "ace"
+                    text2 = "face"
+                ),
+                MaximalSquare(
+                    matrix = arrayOf(
+                        "11100".toCharArray(),
+                        "11100".toCharArray(),
+                        "00100".toCharArray(),
+                        "00011".toCharArray()
+                    )
                 )
             )
 

@@ -28,14 +28,14 @@ class NumberOfIslands(
             val dx = intArrayOf(-1, 1, 0, 0)
             val dy = intArrayOf(0, 0, -1, 1)
 
-            val matrix = IntArray(m * n)
+            val dp = IntArray(m * n)
 
             var count = 0
 
             for (i in grid.indices) {
                 for (j in grid[0].indices) {
                     if (grid[i][j] == '1') {
-                        matrix[i * n + j] = i * n + j
+                        dp[i * n + j] = i * n + j
                         count++
                     }
                 }
@@ -49,11 +49,11 @@ class NumberOfIslands(
                             val y = dy[k] + j
 
                             if (x in grid.indices && y in grid[0].indices && grid[x][y] == '1') {
-                                val pRoot = matrix.root(i * n + j)
-                                val qRoot = matrix.root(x * n + y)
+                                val pRoot = dp.root(i * n + j)
+                                val qRoot = dp.root(x * n + y)
 
                                 if (pRoot != qRoot) {
-                                    matrix[pRoot] = qRoot
+                                    dp[pRoot] = qRoot
                                     count--
                                 }
                             }

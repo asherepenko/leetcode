@@ -11,41 +11,41 @@ class MinPathSum(
             val m = grid.size
             val n = grid[0].size
 
-            val matrix = Array(m) {
+            val dp = Array(m) {
                 IntArray(n)
             }
 
-            matrix[0][0] = grid[0][0]
+            dp[0][0] = grid[0][0]
 
             for (i in 1 until m) {
-                matrix[i][0] = matrix[i - 1][0] + grid[i][0]
+                dp[i][0] = dp[i - 1][0] + grid[i][0]
             }
 
             for (j in 1 until n) {
-                matrix[0][j] = matrix[0][j - 1] + grid[0][j]
+                dp[0][j] = dp[0][j - 1] + grid[0][j]
             }
 
             println("    Initial Matrix:")
-            matrix.forEach {
+            dp.forEach {
                 println("    ${it.joinToString(separator = " ")}")
             }
 
             for (i in 1 until m) {
                 for (j in 1 until n) {
-                    matrix[i][j] = if (matrix[i - 1][j] > matrix[i][j - 1]) {
-                        matrix[i][j - 1] + grid[i][j]
+                    dp[i][j] = if (dp[i - 1][j] > dp[i][j - 1]) {
+                        dp[i][j - 1] + grid[i][j]
                     } else {
-                        matrix[i - 1][j] + grid[i][j]
+                        dp[i - 1][j] + grid[i][j]
                     }
                 }
             }
 
             println("    Result Matrix:")
-            matrix.forEach {
+            dp.forEach {
                 println("    ${it.joinToString(separator = " ")}")
             }
 
-            return matrix[m - 1][n - 1]
+            return dp[m - 1][n - 1]
         }
     }
 
