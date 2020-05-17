@@ -2,6 +2,8 @@ package com.sherepenko.leetcode.data
 
 import kotlin.math.max
 
+const val TREE_INDENTATION = 10
+
 enum class Traversal {
     PRE_ORDER,
     IN_ORDER,
@@ -39,15 +41,17 @@ fun TreeNode?.prettifyPrint(space: Int = 0) {
         return
     }
 
-    right?.prettifyPrint(space + 10)
+    val indentation = space + TREE_INDENTATION
+
+    right?.prettifyPrint(indentation)
     println()
 
-    for (i in 10 until space) {
-        print(' ')
+    for (i in TREE_INDENTATION until indentation) {
+        print(" ")
     }
-    println(value)
+    println(this)
 
-    left?.prettifyPrint(space + 10)
+    left?.prettifyPrint(indentation)
 }
 
 fun TreeNode.joinToString(separator: String = ", ", prefix: String = "", postfix: String = "", traversal: Traversal = Traversal.PRE_ORDER): String {
@@ -84,7 +88,7 @@ private fun preOrderTraversal(node: TreeNode?, builder: StringBuilder, separator
         return
     }
 
-    builder.append(node.value)
+    builder.append(node.value).append(separator)
 
     preOrderTraversal(node.left, builder, separator)
     preOrderTraversal(node.right, builder, separator)

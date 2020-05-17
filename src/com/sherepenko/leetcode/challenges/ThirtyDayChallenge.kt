@@ -175,7 +175,17 @@ object ThirtyDayChallenge : Executable {
         // Week 5
         object : Executable {
 
-            val challenges = emptyList<Executable>()
+            val challenges = listOf(
+                BinaryTreeMaxPathSum(
+                    root = TreeNode(1).apply {
+                        left = TreeNode(2)
+                        left?.left = TreeNode(4)
+                        left?.right = TreeNode(5)
+
+                        right = TreeNode(3)
+                    }
+                )
+            )
 
             override fun execute() {
                 println("========== Week 5 ==========")
