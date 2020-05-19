@@ -1,11 +1,11 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 import kotlin.math.max
 
 class LengthOfLongestUniqueSubstring(
     private val str: String
-) : Executable {
+) : Solution {
 
     companion object {
         fun lengthOfLongestSubstring(str: String): Int {
@@ -23,7 +23,7 @@ class LengthOfLongestUniqueSubstring(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = lengthOfLongestSubstring(str)
         println(
             "Length of Longest Substring: \n" +

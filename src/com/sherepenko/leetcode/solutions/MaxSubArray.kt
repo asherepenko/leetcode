@@ -1,11 +1,11 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 import kotlin.math.max
 
 class MaxSubArray(
     private val numbers: IntArray
-) : Executable {
+) : Solution {
 
     companion object {
         fun maxSubArray(numbers: IntArray): Int {
@@ -21,7 +21,7 @@ class MaxSubArray(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = maxSubArray(numbers)
         println(
             "Maximum Sub Array: \n" +

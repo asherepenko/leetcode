@@ -1,17 +1,17 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 
 class MaxProfitII(
     private val prices: IntArray
-) : Executable {
+) : Solution {
 
     companion object {
         fun maxProfit(prices: IntArray): Int {
             var profit = 0
 
-            for (i in 0 until prices.lastIndex) {
-                val diff = prices[i + 1] - prices[i]
+            for (i in 1 until prices.size) {
+                val diff = prices[i] - prices[i - 1]
                 if (diff > 0) {
                     profit += diff
                 }
@@ -21,7 +21,7 @@ class MaxProfitII(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = maxProfit(prices)
 
         println(

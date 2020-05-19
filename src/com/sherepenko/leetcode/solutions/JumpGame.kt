@@ -1,11 +1,11 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 import kotlin.math.max
 
 class JumpGame(
     private val numbers: IntArray
-) : Executable {
+) : Solution {
 
     companion object {
         fun canJump(numbers: IntArray): Boolean {
@@ -43,7 +43,7 @@ class JumpGame(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = canJump(numbers)
 
         println(

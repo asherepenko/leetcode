@@ -1,10 +1,10 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 
 class SingleNumber(
     private val numbers: IntArray
-) : Executable {
+) : Solution {
 
     companion object {
         fun singleNumber(numbers: IntArray): Int {
@@ -18,7 +18,7 @@ class SingleNumber(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = singleNumber(numbers)
         println(
             "Single Number: \n" +

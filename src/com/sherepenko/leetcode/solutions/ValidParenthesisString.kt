@@ -1,11 +1,11 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 import kotlin.math.max
 
 class ValidParenthesisString(
     private val str: String
-) : Executable {
+) : Solution {
 
     companion object {
         fun checkValidString(str: String): Boolean {
@@ -26,7 +26,7 @@ class ValidParenthesisString(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = checkValidString(str)
         println(
             "Valid Parenthesis String: \n" +

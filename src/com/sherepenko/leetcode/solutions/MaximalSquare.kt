@@ -1,12 +1,12 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 import kotlin.math.max
 import kotlin.math.min
 
 class MaximalSquare(
     private val matrix: Array<CharArray>
-) : Executable {
+) : Solution {
 
     companion object {
         fun maximalSquare(matrix: Array<CharArray>): Int {
@@ -14,6 +14,7 @@ class MaximalSquare(
             val n = if (matrix.isNotEmpty()) matrix[0].size + 1 else 1
 
             val dp = IntArray(n)
+            dp[0] = 0
 
             var prev = 0
             var maxSquareLength = 0
@@ -35,7 +36,7 @@ class MaximalSquare(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         println("Maximal Square:")
         println("    Input:")
         matrix.forEach {

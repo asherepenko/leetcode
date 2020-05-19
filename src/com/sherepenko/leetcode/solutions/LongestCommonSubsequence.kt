@@ -1,12 +1,12 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 import kotlin.math.max
 
 class LongestCommonSubsequence(
     private val text1: String,
     private val text2: String
-) : Executable {
+) : Solution {
 
     companion object {
         fun longestCommonSubsequence(text1: String, text2: String): Int {
@@ -33,7 +33,7 @@ class LongestCommonSubsequence(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = longestCommonSubsequence(text1, text2)
 
         println(

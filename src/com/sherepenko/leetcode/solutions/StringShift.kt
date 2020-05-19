@@ -1,12 +1,12 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 import kotlin.math.abs
 
 class StringShift(
     private val str: String,
     private val shifts: Array<IntArray>
-) : Executable {
+) : Solution {
 
     companion object {
         fun stringShift(str: String, shifts: Array<IntArray>): String {
@@ -35,7 +35,7 @@ class StringShift(
             substring(offset) + substring(0, offset)
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = stringShift(str, shifts)
 
         println(

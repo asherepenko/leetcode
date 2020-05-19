@@ -1,10 +1,10 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 
 class MinPathSum(
     private val grid: Array<IntArray>
-) : Executable {
+) : Solution {
 
     companion object {
         fun minPathSum(grid: Array<IntArray>): Int {
@@ -49,8 +49,9 @@ class MinPathSum(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = minPathSum(grid)
+        println("Minimum Path Sum:")
         println("    Input:")
         grid.forEach {
             println("    ${it.joinToString(separator = " ")}")

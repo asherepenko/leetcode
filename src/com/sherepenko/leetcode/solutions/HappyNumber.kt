@@ -1,10 +1,10 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 
 class HappyNumber(
     private val number: Int
-) : Executable {
+) : Solution {
     companion object {
         fun isHappy(number: Int): Boolean {
             var sum = number
@@ -29,7 +29,7 @@ class HappyNumber(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = isHappy(number)
         println(
             "Happy Number: \n" +

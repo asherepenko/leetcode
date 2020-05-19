@@ -1,13 +1,13 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 import com.sherepenko.leetcode.data.ListNode
 import com.sherepenko.leetcode.data.joinToString
 
 class AddTwoNumbers(
     private val head1: ListNode?,
     private val head2: ListNode?
-) : Executable {
+) : Solution {
 
     companion object {
         fun addTwoNumbers(head1: ListNode?, head2: ListNode?): ListNode? {
@@ -46,7 +46,7 @@ class AddTwoNumbers(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = addTwoNumbers(head1, head2)
         println(
             "Add Two Numbers: \n" +

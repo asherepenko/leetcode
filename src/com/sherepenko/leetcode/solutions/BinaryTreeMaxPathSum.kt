@@ -1,6 +1,6 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 import com.sherepenko.leetcode.data.TreeNode
 import com.sherepenko.leetcode.data.joinToString
 import com.sherepenko.leetcode.data.prettifyPrint
@@ -9,7 +9,7 @@ import kotlin.math.max
 
 class BinaryTreeMaxPathSum(
     private val root: TreeNode?
-) : Executable {
+) : Solution {
 
     companion object {
         fun maxPathSum(root: TreeNode?): Int {
@@ -36,7 +36,7 @@ class BinaryTreeMaxPathSum(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = maxPathSum(root)
         println(
             "Diameter of Binary Tree: \n" +

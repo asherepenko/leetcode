@@ -1,12 +1,12 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 import com.sherepenko.leetcode.data.ListNode
 import com.sherepenko.leetcode.data.joinToString
 
 class ReverseLinkedList(
     private val head: ListNode?
-) : Executable {
+) : Solution {
 
     companion object {
         fun reverseListIterative(head: ListNode?) : ListNode? {
@@ -36,7 +36,7 @@ class ReverseLinkedList(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         println(
             "Reverse Linked List: \n" +
             "    Input: ${head?.joinToString(prefix = "[", postfix = "]")}; \n" +

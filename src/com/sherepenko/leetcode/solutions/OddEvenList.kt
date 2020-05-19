@@ -1,12 +1,12 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 import com.sherepenko.leetcode.data.ListNode
 import com.sherepenko.leetcode.data.joinToString
 
 class OddEvenList(
     private val head: ListNode?
-) : Executable {
+) : Solution {
 
     companion object {
         fun oddEvenList(head: ListNode?): Array<ListNode?> {
@@ -36,7 +36,7 @@ class OddEvenList(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = oddEvenList(head)
 
         println(

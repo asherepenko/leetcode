@@ -1,10 +1,10 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 
 class ProductOfArrayExceptSelf(
     private val numbers: IntArray
-) : Executable {
+) : Solution {
 
     companion object {
         fun productExceptSelf(numbers: IntArray): IntArray {
@@ -25,7 +25,7 @@ class ProductOfArrayExceptSelf(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = productExceptSelf(numbers)
         println(
             "Product of Array Except Self: \n" +

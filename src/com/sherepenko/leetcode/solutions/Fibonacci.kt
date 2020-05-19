@@ -1,10 +1,10 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 
 class Fibonacci(
     private val number: Int
-) : Executable {
+) : Solution {
 
     companion object {
         fun fibonacci(number: Int): IntArray {
@@ -30,7 +30,7 @@ class Fibonacci(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = fibonacci(number)
         println(
             "Fibonacci sequence: \n" +

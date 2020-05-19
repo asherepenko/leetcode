@@ -1,13 +1,13 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 import com.sherepenko.leetcode.data.Traversal
 import com.sherepenko.leetcode.data.TreeNode
 import com.sherepenko.leetcode.data.joinToString
 
 class BinaryTreePreorderTraversal(
     private val values: IntArray
-) : Executable {
+) : Solution {
 
     companion object {
         fun bstFromPreorder(values: IntArray): TreeNode? {
@@ -34,7 +34,7 @@ class BinaryTreePreorderTraversal(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = bstFromPreorder(values)
 
         println(

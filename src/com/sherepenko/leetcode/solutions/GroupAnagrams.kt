@@ -1,10 +1,10 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 
 class GroupAnagrams(
     private val strs: Array<String>
-) : Executable {
+) : Solution {
 
     companion object {
         fun groupAnagrams(strs: Array<String>): List<List<String>> {
@@ -23,7 +23,7 @@ class GroupAnagrams(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = groupAnagrams(strs)
         println(
             "Group Anagrams: \n" +

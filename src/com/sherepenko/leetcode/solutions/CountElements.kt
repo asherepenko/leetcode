@@ -1,10 +1,10 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 
 class CountElements(
     private val numbers: IntArray
-) : Executable {
+) : Solution {
 
     companion object {
         fun countElements(numbers: IntArray): Int {
@@ -21,7 +21,7 @@ class CountElements(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = countElements(numbers)
         println(
             "Counting Elements: \n" +

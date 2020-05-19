@@ -1,11 +1,11 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 
 class TwoSum(
     private val numbers: IntArray,
     private val target: Int
-) : Executable {
+) : Solution {
 
     companion object {
 
@@ -26,7 +26,7 @@ class TwoSum(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         try {
             val result = twoSum(numbers, target)
             println(

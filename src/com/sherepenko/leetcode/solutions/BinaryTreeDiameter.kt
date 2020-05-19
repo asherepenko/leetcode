@@ -1,6 +1,6 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 import com.sherepenko.leetcode.data.TreeNode
 import com.sherepenko.leetcode.data.height
 import com.sherepenko.leetcode.data.joinToString
@@ -10,7 +10,7 @@ import kotlin.math.max
 
 class BinaryTreeDiameter(
     private val root: TreeNode?
-) : Executable {
+) : Solution {
 
     companion object {
         fun diameterOfBinaryTree(root: TreeNode?): Int {
@@ -35,7 +35,7 @@ class BinaryTreeDiameter(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = diameterOfBinaryTree(root)
         println(
             "Diameter of Binary Tree: \n" +

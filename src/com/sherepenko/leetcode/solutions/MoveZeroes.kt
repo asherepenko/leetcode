@@ -1,10 +1,10 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 
 class MoveZeroes(
     private val numbers: IntArray
-) : Executable {
+) : Solution {
 
     companion object {
         fun moveZeroes(numbers: IntArray): IntArray {
@@ -23,7 +23,7 @@ class MoveZeroes(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         println(
             "Move Zeroes: \n" +
             "    Input: ${numbers.joinToString(prefix = "[", postfix = "]")}; \n" +

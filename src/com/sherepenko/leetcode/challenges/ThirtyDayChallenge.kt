@@ -1,15 +1,15 @@
 package com.sherepenko.leetcode.challenges
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 import com.sherepenko.leetcode.data.ListNode
 import com.sherepenko.leetcode.data.TreeNode
 import com.sherepenko.leetcode.solutions.*
 
-object ThirtyDayChallenge : Executable {
+object ThirtyDayChallenge : Solution {
 
     private val challenges = listOf(
         // Week 1
-        object : Executable {
+        object : Solution {
 
             private val challenges = listOf(
                 SingleNumber(
@@ -39,16 +39,16 @@ object ThirtyDayChallenge : Executable {
                 )
             )
 
-            override fun execute() {
+            override fun resolve() {
                 println("========== Week 1 ==========")
                 challenges.forEach {
-                    it.execute()
+                    it.resolve()
                 }
             }
         },
 
         // Week 2
-        object : Executable {
+        object : Solution {
 
             private val challenges = listOf(
                 MiddleNode(
@@ -85,16 +85,16 @@ object ThirtyDayChallenge : Executable {
                 )
             )
 
-            override fun execute() {
+            override fun resolve() {
                 println("========== Week 2 ==========")
                 challenges.forEach {
-                    it.execute()
+                    it.resolve()
                 }
             }
         },
 
         // Week 3
-        object : Executable {
+        object : Solution {
 
             private val challenges = listOf(
                 ProductOfArrayExceptSelf(
@@ -127,16 +127,16 @@ object ThirtyDayChallenge : Executable {
                 )
             )
 
-            override fun execute() {
+            override fun resolve() {
                 println("========== Week 3 ==========")
                 challenges.forEach {
-                    it.execute()
+                    it.resolve()
                 }
             }
         },
 
         // Week 4
-        object : Executable {
+        object : Solution {
 
             private val challenges = listOf(
                 SubArraySum(
@@ -164,16 +164,16 @@ object ThirtyDayChallenge : Executable {
                 )
             )
 
-            override fun execute() {
+            override fun resolve() {
                 println("========== Week 4 ==========")
                 challenges.forEach {
-                    it.execute()
+                    it.resolve()
                 }
             }
         },
 
         // Week 5
-        object : Executable {
+        object : Solution {
 
             val challenges = listOf(
                 BinaryTreeMaxPathSum(
@@ -187,19 +187,19 @@ object ThirtyDayChallenge : Executable {
                 )
             )
 
-            override fun execute() {
+            override fun resolve() {
                 println("========== Week 5 ==========")
                 challenges.forEach {
-                    it.execute()
+                    it.resolve()
                 }
             }
         }
     )
 
-    override fun execute() {
+    override fun resolve() {
         println("========== 30  D A Y  C H A L L E N G E ==========")
         challenges.forEach {
-            it.execute()
+            it.resolve()
         }
     }
 }

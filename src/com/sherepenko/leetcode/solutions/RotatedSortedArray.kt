@@ -1,11 +1,11 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 
 class RotatedSortedArray(
     private val numbers: IntArray,
     private val target: Int
-) : Executable {
+) : Solution {
 
     companion object {
         fun search(numbers: IntArray, target: Int): Int {
@@ -38,7 +38,7 @@ class RotatedSortedArray(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = search(numbers, target)
 
         println(

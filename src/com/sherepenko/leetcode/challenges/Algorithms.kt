@@ -1,10 +1,10 @@
 package com.sherepenko.leetcode.challenges
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 import com.sherepenko.leetcode.data.ListNode
 import com.sherepenko.leetcode.solutions.*
 
-object Algorithms : Executable {
+object Algorithms : Solution {
 
     private val challenges = listOf(
         TwoSum(
@@ -52,10 +52,10 @@ object Algorithms : Executable {
         )
     )
 
-    override fun execute() {
+    override fun resolve() {
         println("========== A L G O R I T H M S ==========")
         challenges.forEach {
-            it.execute()
+            it.resolve()
         }
     }
 }

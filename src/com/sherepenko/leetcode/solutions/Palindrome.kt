@@ -1,10 +1,10 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 
 class Palindrome(
     private val str: String
-) : Executable {
+) : Solution {
 
     companion object {
         fun isPalindrome(str: String): Boolean {
@@ -18,7 +18,7 @@ class Palindrome(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = isPalindrome(str)
         println(
             "Palindrome String: \n" +

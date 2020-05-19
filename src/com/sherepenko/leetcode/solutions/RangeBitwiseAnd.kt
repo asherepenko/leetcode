@@ -1,11 +1,11 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 
 class RangeBitwiseAnd(
     private val first: Int,
     private val last: Int
-) : Executable {
+) : Solution {
 
     companion object {
         fun rangeBitwiseAnd(first: Int, last: Int): Int {
@@ -29,7 +29,7 @@ class RangeBitwiseAnd(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = rangeBitwiseAnd(first, last)
 
         println(

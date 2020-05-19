@@ -1,11 +1,11 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 import kotlin.math.max
 
 class ContiguosArray(
     private val numbers: IntArray
-) : Executable {
+) : Solution {
 
     companion object {
         fun findMaxLength(numbers: IntArray): Int {
@@ -30,7 +30,7 @@ class ContiguosArray(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = findMaxLength(numbers)
         println(
             "Contiguous Array: \n" +

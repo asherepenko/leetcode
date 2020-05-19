@@ -1,12 +1,11 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
-import com.sherepenko.leetcode.data.joinToString
+import com.sherepenko.leetcode.Solution
 
 class SubArraySum(
     private val numbers: IntArray,
     private val value: Int
-) : Executable {
+) : Solution {
 
     companion object {
         fun subArraySum(numbers: IntArray, value: Int): Int {
@@ -27,7 +26,7 @@ class SubArraySum(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = subArraySum(numbers, value)
 
         println(

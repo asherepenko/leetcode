@@ -1,10 +1,11 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
+import com.sherepenko.leetcode.solutions.NumberOfIslands.Companion.find
 
 class NumberOfIslands(
     private val grid: Array<CharArray>
-) : Executable {
+) : Solution {
 
     companion object {
         fun numIslandsI(grid: Array<CharArray>): Int {
@@ -25,8 +26,8 @@ class NumberOfIslands(
         fun numIslandsII(grid: Array<CharArray>): Int {
             val m = grid.size
             val n = grid[0].size
-            val dx = intArrayOf(-1, 1, 0, 0)
-            val dy = intArrayOf(0, 0, -1, 1)
+            val dx = intArrayOf(1, 0)
+            val dy = intArrayOf(0, 1)
 
             val dp = IntArray(m * n)
 
@@ -41,6 +42,16 @@ class NumberOfIslands(
                 }
             }
 
+            fun union(p: Int, q: Int) {
+                val pRoot = dp.find(p)
+                val qRoot = dp.find(q)
+
+                if (pRoot != qRoot) {
+                    dp[pRoot] = qRoot
+                    count--
+                }
+            }
+
             for (i in grid.indices) {
                 for (j in grid[0].indices) {
                     if (grid[i][j] == '1') {
@@ -49,13 +60,7 @@ class NumberOfIslands(
                             val y = dy[k] + j
 
                             if (x in grid.indices && y in grid[0].indices && grid[x][y] == '1') {
-                                val pRoot = dp.root(i * n + j)
-                                val qRoot = dp.root(x * n + y)
-
-                                if (pRoot != qRoot) {
-                                    dp[pRoot] = qRoot
-                                    count--
-                                }
+                                union(i * n + j, x * n + y)
                             }
                         }
                     }
@@ -76,7 +81,7 @@ class NumberOfIslands(
             }
         }
 
-        private fun IntArray.root(index: Int): Int {
+        private fun IntArray.find(index: Int): Int {
             var i = index
 
             while (this[i] != i) {
@@ -87,7 +92,7 @@ class NumberOfIslands(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         println("Number Of Islands:")
         println("    Input:")
         grid.forEach {

@@ -1,11 +1,11 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 import java.util.*
 
 class LastStoneWeight(
     private val stones: IntArray
-) : Executable {
+) : Solution {
 
     companion object {
         fun lastStoneWeight(stones: IntArray): Int {
@@ -30,7 +30,7 @@ class LastStoneWeight(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = lastStoneWeight(stones)
         println(
             "Last Stone Weight: \n" +

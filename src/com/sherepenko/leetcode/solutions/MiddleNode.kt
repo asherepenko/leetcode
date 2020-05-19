@@ -1,12 +1,12 @@
 package com.sherepenko.leetcode.solutions
 
-import com.sherepenko.leetcode.Executable
+import com.sherepenko.leetcode.Solution
 import com.sherepenko.leetcode.data.ListNode
 import com.sherepenko.leetcode.data.joinToString
 
 class MiddleNode(
     private val head: ListNode?
-) : Executable {
+) : Solution {
 
     companion object {
         fun middleNode(head: ListNode?): ListNode? {
@@ -22,7 +22,7 @@ class MiddleNode(
         }
     }
 
-    override fun execute() {
+    override fun resolve() {
         val result = middleNode(head)
         println(
             "Middle Node: \n" +
