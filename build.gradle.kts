@@ -1,5 +1,8 @@
+import org.jlleitschuh.gradle.ktlint.reporter.ReporterType
+
 plugins {
     application
+    id("org.jlleitschuh.gradle.ktlint") version "9.2.1"
     kotlin("jvm") version "1.3.72"
 }
 
@@ -12,6 +15,15 @@ repositories {
 
 application {
     mainClassName = "com.sherepenko.leetcode.MainKt"
+}
+
+ktlint {
+    verbose.set(true)
+
+    reporters {
+        reporter(ReporterType.PLAIN)
+        reporter(ReporterType.CHECKSTYLE)
+    }
 }
 
 dependencies {
