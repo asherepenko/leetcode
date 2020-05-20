@@ -3,7 +3,31 @@ package com.sherepenko.leetcode.challenges
 import com.sherepenko.leetcode.Solution
 import com.sherepenko.leetcode.data.ListNode
 import com.sherepenko.leetcode.data.TreeNode
-import com.sherepenko.leetcode.solutions.*
+import com.sherepenko.leetcode.solutions.BackspaceCompare
+import com.sherepenko.leetcode.solutions.BinaryTreeDiameter
+import com.sherepenko.leetcode.solutions.BinaryTreeMaxPathSum
+import com.sherepenko.leetcode.solutions.BinaryTreePreorderTraversal
+import com.sherepenko.leetcode.solutions.ContiguosArray
+import com.sherepenko.leetcode.solutions.CountElements
+import com.sherepenko.leetcode.solutions.GroupAnagrams
+import com.sherepenko.leetcode.solutions.HappyNumber
+import com.sherepenko.leetcode.solutions.JumpGame
+import com.sherepenko.leetcode.solutions.LastStoneWeight
+import com.sherepenko.leetcode.solutions.LongestCommonSubsequence
+import com.sherepenko.leetcode.solutions.MaxProfitII
+import com.sherepenko.leetcode.solutions.MaxSubArray
+import com.sherepenko.leetcode.solutions.MaximalSquare
+import com.sherepenko.leetcode.solutions.MiddleNode
+import com.sherepenko.leetcode.solutions.MinPathSum
+import com.sherepenko.leetcode.solutions.MoveZeroes
+import com.sherepenko.leetcode.solutions.NumberOfIslands
+import com.sherepenko.leetcode.solutions.ProductOfArrayExceptSelf
+import com.sherepenko.leetcode.solutions.RangeBitwiseAnd
+import com.sherepenko.leetcode.solutions.RotatedSortedArray
+import com.sherepenko.leetcode.solutions.SingleNumber
+import com.sherepenko.leetcode.solutions.StringShift
+import com.sherepenko.leetcode.solutions.SubArraySum
+import com.sherepenko.leetcode.solutions.ValidParenthesisString
 
 object ThirtyDayChallenge : Solution {
 

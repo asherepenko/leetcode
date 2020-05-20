@@ -1,7 +1,6 @@
 package com.sherepenko.leetcode.solutions
 
 import com.sherepenko.leetcode.Solution
-import com.sherepenko.leetcode.solutions.NumberOfIslands.Companion.find
 
 class NumberOfIslands(
     private val grid: Array<CharArray>

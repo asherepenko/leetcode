@@ -2,7 +2,14 @@ package com.sherepenko.leetcode.challenges
 
 import com.sherepenko.leetcode.Solution
 import com.sherepenko.leetcode.data.ListNode
-import com.sherepenko.leetcode.solutions.*
+import com.sherepenko.leetcode.solutions.AddTwoNumbers
+import com.sherepenko.leetcode.solutions.Fibonacci
+import com.sherepenko.leetcode.solutions.LengthOfLongestUniqueSubstring
+import com.sherepenko.leetcode.solutions.LongestCommonSubstring
+import com.sherepenko.leetcode.solutions.OddEvenList
+import com.sherepenko.leetcode.solutions.Palindrome
+import com.sherepenko.leetcode.solutions.ReverseLinkedList
+import com.sherepenko.leetcode.solutions.TwoSum
 
 object Algorithms : Solution {
 

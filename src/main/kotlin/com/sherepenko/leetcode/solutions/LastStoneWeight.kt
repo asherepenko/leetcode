@@ -1,7 +1,8 @@
 package com.sherepenko.leetcode.solutions
 
 import com.sherepenko.leetcode.Solution
-import java.util.*
+import java.util.Collections
+import java.util.PriorityQueue
 
 class LastStoneWeight(
     private val stones: IntArray

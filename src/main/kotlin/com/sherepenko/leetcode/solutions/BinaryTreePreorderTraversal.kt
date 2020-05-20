@@ -28,7 +28,7 @@ class BinaryTreePreorderTraversal(
             }
 
             root.left = bstFromPreorder(leftSubTree.toIntArray())
-            root.right = bstFromPreorder(rightSubTree.toIntArray());
+            root.right = bstFromPreorder(rightSubTree.toIntArray())
 
             return root
         }

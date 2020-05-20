@@ -9,7 +9,7 @@ class ReverseLinkedList(
 ) : Solution {
 
     companion object {
-        fun reverseListIterative(head: ListNode?) : ListNode? {
+        fun reverseListIterative(head: ListNode?): ListNode? {
             var current = head
             var previous: ListNode? = null
 
@@ -23,7 +23,7 @@ class ReverseLinkedList(
             return previous
         }
 
-        fun reverseListRecursive(head: ListNode?) : ListNode? {
+        fun reverseListRecursive(head: ListNode?): ListNode? {
             if (head?.next == null) {
                 return head
             }

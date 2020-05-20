@@ -1,7 +1,7 @@
 package com.sherepenko.leetcode.solutions
 
 import com.sherepenko.leetcode.Solution
-import java.util.*
+import java.util.Stack
 
 class BackspaceCompare(
     private val strFirst: String,
