@@ -33,7 +33,7 @@ class MinPathSum(
 
             for (i in 1 until m) {
                 for (j in 1 until n) {
-                    dp[i][j] = min(dp[i - 1][j], dp[i][j - 1])+ grid[i][j]
+                    dp[i][j] = min(dp[i - 1][j], dp[i][j - 1]) + grid[i][j]
                 }
             }
 
