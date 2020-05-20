@@ -21,10 +21,37 @@ class LengthOfLongestUniqueSubstring(
 
             return length
         }
+
+        fun lengthOfLongestSubstringBf(str: String): Int {
+            var length = 0
+
+            for (i in str.indices) {
+                for (j in (i + 1)..str.length) {
+                    if (str.unique(i, j)) {
+                        length = max(length, j - i)
+                    }
+                }
+            }
+
+            return length
+        }
+
+        private fun String.unique(start: Int, end: Int): Boolean {
+            val set = mutableSetOf<Char>()
+
+            for (i in start until end) {
+                if (set.contains(this[i])) {
+                    return false
+                }
+                set.add(this[i])
+            }
+
+            return true
+        }
     }
 
     override fun resolve() {
-        val result = lengthOfLongestSubstring(str)
+        val result = lengthOfLongestSubstringBf(str)
         println(
             "Length of Longest Substring: \n" +
             "    Input: $str; \n" +

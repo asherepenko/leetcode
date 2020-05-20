@@ -10,15 +10,15 @@ class LongestCommonSubsequence(
 
     companion object {
         fun longestCommonSubsequence(text1: String, text2: String): Int {
-            val m = text1.length + 1
-            val n = text2.length + 1
+            val m = text1.length
+            val n = text2.length
 
-            val dp = Array(m) {
-                IntArray(n)
+            val dp = Array(m + 1) {
+                IntArray(n + 1)
             }
 
-            for (i in 0 until m) {
-                for (j in 0 until n) {
+            for (i in 0..m) {
+                for (j in 0..n) {
                     dp[i][j] = if (i == 0 || j == 0) {
                         0
                     } else if (text1[i - 1] == text2[j - 1]) {
@@ -29,7 +29,7 @@ class LongestCommonSubsequence(
                 }
             }
 
-            return dp[m - 1][n - 1]
+            return dp[m][n]
         }
     }
 

@@ -1,6 +1,7 @@
 package com.sherepenko.leetcode.solutions
 
 import com.sherepenko.leetcode.Solution
+import kotlin.math.min
 
 class MinPathSum(
     private val grid: Array<IntArray>
@@ -32,11 +33,7 @@ class MinPathSum(
 
             for (i in 1 until m) {
                 for (j in 1 until n) {
-                    dp[i][j] = if (dp[i - 1][j] > dp[i][j - 1]) {
-                        dp[i][j - 1] + grid[i][j]
-                    } else {
-                        dp[i - 1][j] + grid[i][j]
-                    }
+                    dp[i][j] = min(dp[i - 1][j], dp[i][j - 1])+ grid[i][j]
                 }
             }
 

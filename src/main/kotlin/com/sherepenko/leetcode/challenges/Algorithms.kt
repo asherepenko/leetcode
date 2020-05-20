@@ -6,6 +6,7 @@ import com.sherepenko.leetcode.solutions.AddTwoNumbers
 import com.sherepenko.leetcode.solutions.Fibonacci
 import com.sherepenko.leetcode.solutions.LengthOfLongestUniqueSubstring
 import com.sherepenko.leetcode.solutions.LongestCommonSubstring
+import com.sherepenko.leetcode.solutions.LongestPalindromicSubstring
 import com.sherepenko.leetcode.solutions.OddEvenList
 import com.sherepenko.leetcode.solutions.Palindrome
 import com.sherepenko.leetcode.solutions.ReverseLinkedList
@@ -56,6 +57,9 @@ object Algorithms : Solution {
         LongestCommonSubstring(
             text1 = "abc",
             text2 = "fabcd"
+        ),
+        LongestPalindromicSubstring(
+            str = "babbad"
         )
     )
 
