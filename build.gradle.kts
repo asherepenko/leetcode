@@ -17,6 +17,11 @@ application {
     mainClassName = "com.sherepenko.leetcode.MainKt"
 }
 
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
 ktlint {
     verbose.set(true)
 
@@ -27,15 +32,11 @@ ktlint {
 }
 
 dependencies {
-    implementation(kotlin("stdlib-jdk8"))
+    implementation(kotlin("stdlib"))
 }
 
 tasks {
     compileKotlin {
-        kotlinOptions.jvmTarget = "1.8"
-    }
-
-    compileTestKotlin {
         kotlinOptions.jvmTarget = "1.8"
     }
 }
