@@ -51,7 +51,7 @@ class LengthOfLongestUniqueSubstring(
     }
 
     override fun resolve() {
-        val result = lengthOfLongestSubstringBf(str)
+        val result = lengthOfLongestSubstring(str)
         println(
             "Length of Longest Substring: \n" +
             "    Input: $str; \n" +
