@@ -2,12 +2,12 @@ import org.jlleitschuh.gradle.ktlint.reporter.ReporterType
 
 plugins {
     application
-    id("org.jlleitschuh.gradle.ktlint") version "9.2.1"
     kotlin("jvm") version "1.3.72"
+    id("org.jlleitschuh.gradle.ktlint") version "9.2.1"
 }
 
 group = "com.sherepenko.leetcode"
-version = "0.0.1-SNAPSHOT"
+version = "1.0.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -32,7 +32,7 @@ ktlint {
 }
 
 dependencies {
-    implementation(kotlin("stdlib"))
+    implementation(kotlin("stdlib-jdk8"))
 }
 
 tasks {
