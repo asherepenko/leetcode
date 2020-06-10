@@ -7,6 +7,7 @@ plugins {
 }
 
 group = "com.sherepenko.leetcode"
+description = "LeetCode challanges"
 version = "1.0.0-SNAPSHOT"
 
 repositories {
