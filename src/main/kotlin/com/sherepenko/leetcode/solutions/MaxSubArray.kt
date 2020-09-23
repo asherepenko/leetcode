@@ -25,8 +25,8 @@ class MaxSubArray(
         val result = maxSubArray(numbers)
         println(
             "Maximum Sub Array: \n" +
-            "    Input: ${numbers.joinToString(prefix = "[", postfix = "]")}; \n" +
-            "    Result: $result \n"
+                "    Input: ${numbers.joinToString(prefix = "[", postfix = "]")}; \n" +
+                "    Result: $result \n"
         )
     }
 }

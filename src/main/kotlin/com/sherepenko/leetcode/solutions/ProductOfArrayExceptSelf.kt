@@ -29,8 +29,8 @@ class ProductOfArrayExceptSelf(
         val result = productExceptSelf(numbers)
         println(
             "Product of Array Except Self: \n" +
-            "    Input: ${numbers.joinToString(prefix = "[", postfix = "]")}; \n" +
-            "    Result: ${result.joinToString(prefix = "[", postfix = "]")} \n"
+                "    Input: ${numbers.joinToString(prefix = "[", postfix = "]")}; \n" +
+                "    Result: ${result.joinToString(prefix = "[", postfix = "]")} \n"
         )
     }
 }

@@ -29,8 +29,8 @@ class BackspaceCompare(
         val result = backspaceCompare(strFirst, strLast)
         println(
             "Backspace String Compare: \n" +
-            "    Input: $strFirst, $strLast; \n" +
-            "    Result: $result \n"
+                "    Input: $strFirst, $strLast; \n" +
+                "    Result: $result \n"
         )
     }
 }

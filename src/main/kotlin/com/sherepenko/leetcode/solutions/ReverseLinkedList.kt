@@ -39,8 +39,8 @@ class ReverseLinkedList(
     override fun resolve() {
         println(
             "Reverse Linked List: \n" +
-            "    Input: ${head?.joinToString(prefix = "[", postfix = "]")}; \n" +
-            "    Result: ${reverseListIterative(head)?.joinToString(prefix = "[", postfix = "]")} \n"
+                "    Input: ${head?.joinToString(prefix = "[", postfix = "]")}; \n" +
+                "    Result: ${reverseListIterative(head)?.joinToString(prefix = "[", postfix = "]")} \n"
         )
     }
 }

@@ -33,8 +33,8 @@ class HappyNumber(
         val result = isHappy(number)
         println(
             "Happy Number: \n" +
-            "    Input: $number; \n" +
-            "    Result: $result \n"
+                "    Input: $number; \n" +
+                "    Result: $result \n"
         )
     }
 }

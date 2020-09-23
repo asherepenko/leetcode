@@ -31,8 +31,8 @@ class SubArraySum(
 
         println(
             "Subarray Sum Equals K: \n" +
-            "    Input: ${numbers.joinToString(prefix = "[", postfix = "]")}; K = $value \n" +
-            "    Result: $result\n"
+                "    Input: ${numbers.joinToString(prefix = "[", postfix = "]")}; K = $value \n" +
+                "    Result: $result\n"
         )
     }
 }

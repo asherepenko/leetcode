@@ -27,8 +27,8 @@ class GroupAnagrams(
         val result = groupAnagrams(strs)
         println(
             "Group Anagrams: \n" +
-            "    Input: ${strs.joinToString(prefix = "[", postfix = "]")}; \n" +
-            "    Result: $result \n"
+                "    Input: ${strs.joinToString(prefix = "[", postfix = "]")}; \n" +
+                "    Result: $result \n"
         )
     }
 }

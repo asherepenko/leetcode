@@ -39,9 +39,9 @@ class BinaryTreeDiameter(
         val result = diameterOfBinaryTree(root)
         println(
             "Diameter of Binary Tree: \n" +
-            "    Input: ${root?.joinToString(prefix = "[", postfix = "]")}, ${root.size()}; \n" +
-            "    Height: ${root.height() - 1}; \n" +
-            "    Diameter: $result \n"
+                "    Input: ${root?.joinToString(prefix = "[", postfix = "]")}, ${root.size()}; \n" +
+                "    Height: ${root.height() - 1}; \n" +
+                "    Diameter: $result \n"
         )
     }
 }

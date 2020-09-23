@@ -2,8 +2,8 @@ import org.jlleitschuh.gradle.ktlint.reporter.ReporterType
 
 plugins {
     application
-    kotlin("jvm") version "1.3.72"
-    id("org.jlleitschuh.gradle.ktlint") version "9.2.1"
+    id("org.jlleitschuh.gradle.ktlint") version "9.4.0"
+    kotlin("jvm") version "1.4.10"
 }
 
 group = "com.sherepenko.leetcode"

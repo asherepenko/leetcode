@@ -22,8 +22,8 @@ class SingleNumber(
         val result = singleNumber(numbers)
         println(
             "Single Number: \n" +
-            "    Input: ${numbers.joinToString(prefix = "[", postfix = "]")}; \n" +
-            "    Result: $result \n"
+                "    Input: ${numbers.joinToString(prefix = "[", postfix = "]")}; \n" +
+                "    Result: $result \n"
         )
     }
 }

@@ -34,8 +34,8 @@ class Fibonacci(
         val result = fibonacci(number)
         println(
             "Fibonacci sequence: \n" +
-            "    Input: $number; \n" +
-            "    Result: ${result.joinToString(prefix = "[", postfix = "]")} \n"
+                "    Input: $number; \n" +
+                "    Result: ${result.joinToString(prefix = "[", postfix = "]")} \n"
         )
     }
 }

@@ -30,8 +30,8 @@ class ValidParenthesisString(
         val result = checkValidString(str)
         println(
             "Valid Parenthesis String: \n" +
-            "    Input: $str; \n" +
-            "    Result: $result \n"
+                "    Input: $str; \n" +
+                "    Result: $result \n"
         )
     }
 }

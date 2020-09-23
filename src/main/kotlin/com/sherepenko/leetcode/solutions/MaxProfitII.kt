@@ -26,8 +26,8 @@ class MaxProfitII(
 
         println(
             "Best Time to Buy and Sell Stock: \n" +
-            "    Input: ${prices.joinToString(prefix = "[", postfix = "]")}; \n" +
-            "    Result: $result \n"
+                "    Input: ${prices.joinToString(prefix = "[", postfix = "]")}; \n" +
+                "    Result: $result \n"
         )
     }
 }

@@ -40,11 +40,11 @@ class StringShift(
 
         println(
             "Perform String Shifts: \n" +
-            "    Input: $str, ${shifts.joinToString(
-                prefix = "[",
-                postfix = "]"
-            ) { it.joinToString(prefix = "[", postfix = "]") }}; \n" +
-            "    Result: $result \n"
+                "    Input: $str, ${shifts.joinToString(
+                    prefix = "[",
+                    postfix = "]"
+                ) { it.joinToString(prefix = "[", postfix = "]") }}; \n" +
+                "    Result: $result \n"
         )
     }
 }

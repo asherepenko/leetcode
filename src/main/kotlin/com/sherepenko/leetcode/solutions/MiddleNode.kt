@@ -26,8 +26,8 @@ class MiddleNode(
         val result = middleNode(head)
         println(
             "Middle Node: \n" +
-            "    Input: ${head?.joinToString(prefix = "[", postfix = "]")}; \n" +
-            "    Result: $result \n"
+                "    Input: ${head?.joinToString(prefix = "[", postfix = "]")}; \n" +
+                "    Result: $result \n"
         )
     }
 }

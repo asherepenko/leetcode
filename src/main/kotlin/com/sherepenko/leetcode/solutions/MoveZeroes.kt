@@ -26,8 +26,8 @@ class MoveZeroes(
     override fun resolve() {
         println(
             "Move Zeroes: \n" +
-            "    Input: ${numbers.joinToString(prefix = "[", postfix = "]")}; \n" +
-            "    Result: ${moveZeroes(numbers).joinToString(prefix = "[", postfix = "]")}} \n"
+                "    Input: ${numbers.joinToString(prefix = "[", postfix = "]")}; \n" +
+                "    Result: ${moveZeroes(numbers).joinToString(prefix = "[", postfix = "]")}} \n"
         )
     }
 }

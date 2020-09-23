@@ -34,8 +34,8 @@ class TwoSum(
             val result = twoSum(numbers, target)
             println(
                 "Two Sum: \n" +
-                "    Input: ${numbers.joinToString(prefix = "[", postfix = "]")}, $target; \n" +
-                "    Result: ${result.joinToString(prefix = "[", postfix = "]")} \n"
+                    "    Input: ${numbers.joinToString(prefix = "[", postfix = "]")}, $target; \n" +
+                    "    Result: ${result.joinToString(prefix = "[", postfix = "]")} \n"
             )
         } catch (e: IllegalArgumentException) {
             println(e.message)

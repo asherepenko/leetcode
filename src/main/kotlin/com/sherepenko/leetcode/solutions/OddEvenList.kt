@@ -41,8 +41,8 @@ class OddEvenList(
 
         println(
             "Odd and Even Lists: \n" +
-            "    Input: ${head?.joinToString(prefix = "[", postfix = "]")}; \n" +
-            "    Result: ${result[0]?.joinToString(prefix = "[", postfix = "]")}, ${result[1]?.joinToString(prefix = "[", postfix = "]")}\n"
+                "    Input: ${head?.joinToString(prefix = "[", postfix = "]")}; \n" +
+                "    Result: ${result[0]?.joinToString(prefix = "[", postfix = "]")}, ${result[1]?.joinToString(prefix = "[", postfix = "]")}\n"
         )
     }
 }

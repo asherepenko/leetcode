@@ -84,8 +84,8 @@ class LongestPalindromicSubstring(
 
         println(
             "Longest Palindromic Substring: \n" +
-            "    Input: $str; \n" +
-            "    Result: $result \n"
+                "    Input: $str; \n" +
+                "    Result: $result \n"
         )
     }
 }

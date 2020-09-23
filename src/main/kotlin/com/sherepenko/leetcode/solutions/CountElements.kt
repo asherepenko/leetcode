@@ -25,8 +25,8 @@ class CountElements(
         val result = countElements(numbers)
         println(
             "Counting Elements: \n" +
-            "    Input: ${numbers.joinToString(prefix = "[", postfix = "]")}; \n" +
-            "    Result: $result \n"
+                "    Input: ${numbers.joinToString(prefix = "[", postfix = "]")}; \n" +
+                "    Result: $result \n"
         )
     }
 }

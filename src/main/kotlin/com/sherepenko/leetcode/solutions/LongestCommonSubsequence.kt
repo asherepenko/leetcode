@@ -38,8 +38,8 @@ class LongestCommonSubsequence(
 
         println(
             "Longest Common Subsequence: \n" +
-            "    Input: $text1, $text2; \n" +
-            "    Result: $result \n"
+                "    Input: $text1, $text2; \n" +
+                "    Result: $result \n"
         )
     }
 }

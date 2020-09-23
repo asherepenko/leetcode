@@ -42,8 +42,8 @@ class LongestCommonSubstring(
 
         println(
             "Longest Common Substring: \n" +
-            "    Input: $text1, $text2; \n" +
-            "    Result: $result \n"
+                "    Input: $text1, $text2; \n" +
+                "    Result: $result \n"
         )
     }
 }

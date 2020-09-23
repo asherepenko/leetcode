@@ -34,8 +34,8 @@ class RangeBitwiseAnd(
 
         println(
             "Bitwise AND of Numbers Range: \n" +
-            "    Input: [$first, $last] \n" +
-            "    Result: $result\n"
+                "    Input: [$first, $last] \n" +
+                "    Result: $result\n"
         )
     }
 }

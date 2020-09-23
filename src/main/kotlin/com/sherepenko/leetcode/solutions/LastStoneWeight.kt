@@ -35,8 +35,8 @@ class LastStoneWeight(
         val result = lastStoneWeight(stones)
         println(
             "Last Stone Weight: \n" +
-            "    Input: ${stones.joinToString(prefix = "[", postfix = "]")}; \n" +
-            "    Result: $result \n"
+                "    Input: ${stones.joinToString(prefix = "[", postfix = "]")}; \n" +
+                "    Result: $result \n"
         )
     }
 }

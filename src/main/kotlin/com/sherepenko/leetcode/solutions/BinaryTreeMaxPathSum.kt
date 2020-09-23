@@ -40,8 +40,8 @@ class BinaryTreeMaxPathSum(
         val result = maxPathSum(root)
         println(
             "Diameter of Binary Tree: \n" +
-            "    Input: ${root?.joinToString(prefix = "[", postfix = "]")} \n" +
-            "    Result: $result \n"
+                "    Input: ${root?.joinToString(prefix = "[", postfix = "]")} \n" +
+                "    Result: $result \n"
         )
         root?.prettifyPrint(4)
     }

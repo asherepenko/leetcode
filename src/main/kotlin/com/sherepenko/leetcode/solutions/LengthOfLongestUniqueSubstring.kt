@@ -54,8 +54,8 @@ class LengthOfLongestUniqueSubstring(
         val result = lengthOfLongestSubstring(str)
         println(
             "Length of Longest Substring: \n" +
-            "    Input: $str; \n" +
-            "    Result: $result \n"
+                "    Input: $str; \n" +
+                "    Result: $result \n"
         )
     }
 }

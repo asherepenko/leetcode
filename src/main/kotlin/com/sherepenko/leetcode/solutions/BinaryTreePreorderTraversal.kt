@@ -39,8 +39,8 @@ class BinaryTreePreorderTraversal(
 
         println(
             "Construct Binary Search Tree from Preorder Traversal: \n" +
-            "    Input: ${values.joinToString(prefix = "[", postfix = "]")}; \n" +
-            "    Result: ${result?.joinToString(prefix = "[", postfix = "]", traversal = Traversal.LEVEL_ORDER)} \n"
+                "    Input: ${values.joinToString(prefix = "[", postfix = "]")}; \n" +
+                "    Result: ${result?.joinToString(prefix = "[", postfix = "]", traversal = Traversal.LEVEL_ORDER)} \n"
         )
     }
 }

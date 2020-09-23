@@ -50,8 +50,8 @@ class AddTwoNumbers(
         val result = addTwoNumbers(head1, head2)
         println(
             "Add Two Numbers: \n" +
-            "    Input: ${head1?.joinToString(prefix = "[", postfix = "]")}, ${head2?.joinToString(prefix = "[", postfix = "]")}; \n" +
-            "    Result: ${result?.joinToString(prefix = "[", postfix = "]")} \n"
+                "    Input: ${head1?.joinToString(prefix = "[", postfix = "]")}, ${head2?.joinToString(prefix = "[", postfix = "]")}; \n" +
+                "    Result: ${result?.joinToString(prefix = "[", postfix = "]")} \n"
         )
     }
 }

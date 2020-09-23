@@ -22,8 +22,8 @@ class Palindrome(
         val result = isPalindrome(str)
         println(
             "Palindrome String: \n" +
-            "    Input: $str; \n" +
-            "    Result: $result \n"
+                "    Input: $str; \n" +
+                "    Result: $result \n"
         )
     }
 }
